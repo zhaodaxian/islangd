@@ -8,7 +8,7 @@ app.use((ctx, next) => {
 })
 
 app.use((ctx, next) => {
-    console.log('加油就完事啦')
+    console.log('亲爱的你慢慢飞')
     next()
 })
 
