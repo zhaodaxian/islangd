@@ -1,15 +1,9 @@
 const KOA = require('koa')
+const classic = require('./api/v1/classic')
+const book = require('./api/v1/book')
 
 const app = new KOA()
 
-app.use((ctx, next) => {
-    console.log('奥利给')
-    next()
-})
-
-app.use((ctx, next) => {
-    console.log('亲爱的你慢慢飞')
-    next()
-})
-
+app.use(classic.routes())
+app.use(book.routes())
 app.listen(3000)
