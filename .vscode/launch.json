@@ -12,15 +12,12 @@
             "program": "${workspaceFolder}/app.js",
             "restart": true,
             "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "skipFiles": [
-                "<node_internals>/**"
-            ]
+            "internalConsoleOptions": "neverOpen"
         },
         {
             "type": "node",
             "request": "launch",
-            "name": "启动程序",
+            "name": "Launch Program",
             "program": "${workspaceFolder}/app.js"
         },
         {
@@ -28,6 +25,6 @@
             "request": "launch",
             "name": "当前文件",
             "program": "${file}"
-        }
+        },
     ]
 }
